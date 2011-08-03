@@ -37,3 +37,4 @@ Nota:
   * Recorrer de forma creciente los factores desde 2 hasta numero/2
   * Para cada factor, ejecutar el while que comprueba si el numero / factor == 0
 15. Probar con 2*3*5*7*11 (todos numeros primos).
+16. Pequeño refactor para simplificar la condición del while principal.
