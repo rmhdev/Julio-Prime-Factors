@@ -10,14 +10,13 @@ class PrimeFactors {
     public static function generate($number){
 
         $result = array();
-        for ($factor = 2; $factor <= ($number / 2); $factor++){
+        $factor = 2;
+        while ($number > 1) {
             while (($number % $factor) == 0){
                 $result[] = $factor;
                 $number /= $factor;
             }
-        }
-        if ($number > 1){
-            $result[] = $number;
+            $factor++;
         }
         
         return $result;
